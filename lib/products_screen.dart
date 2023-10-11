@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
-class ProductListScreen extends StatefulWidget {
-  const ProductListScreen({super.key});
+class ProductScreen extends StatefulWidget {
+  const ProductScreen({super.key});
 
   @override
-  State<ProductListScreen> createState() => _ProductListScreenState();
+  State<ProductScreen> createState() => _ProductScreenState();
 }
 
-class _ProductListScreenState extends State<ProductListScreen> {
+class _ProductScreenState extends State<ProductScreen> {
   List<String> productName = [
     'Mango',
     'Orange',
@@ -86,7 +86,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                               productImage[index].toString(),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Expanded(
@@ -96,11 +96,11 @@ class _ProductListScreenState extends State<ProductListScreen> {
                               children: [
                                 Text(
                                   productName[index].toString(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 5,
                                 ),
                                 Text(
@@ -108,11 +108,11 @@ class _ProductListScreenState extends State<ProductListScreen> {
                                       " " +
                                       r"$" +
                                       productPrice[index].toString(),
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w500),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 5,
                                 ),
                                 Align(
@@ -124,7 +124,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                                       color: Colors.green,
                                       borderRadius: BorderRadius.circular(5),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text(
                                         'Add to cart',
                                         style: TextStyle(color: Colors.white),

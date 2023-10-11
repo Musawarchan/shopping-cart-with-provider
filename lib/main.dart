@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_cart/product_list.dart';
+import 'package:shopping_cart/products_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        home: ProductListScreen());
+        home: ProductScreen());
   }
 }
